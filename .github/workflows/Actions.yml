@@ -20,4 +20,4 @@ jobs:
       - name: zipping
         run: | 
           tar -czf Test.tar.gz charset.c
-          rsync -avzh Test.tar.gz luis@192.168.15.107:/home/luis
+          rsync -avzh Test.tar.gz luis@192.168.15.107:/home/luis/
