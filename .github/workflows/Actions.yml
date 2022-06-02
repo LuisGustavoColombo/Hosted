@@ -20,4 +20,4 @@ jobs:
       - name: zipping
         run: | 
           tar -czf Test.tar.gz charset.c
-          ping 8.8.8.8
+          ping self-hosted
