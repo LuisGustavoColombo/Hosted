@@ -20,4 +20,4 @@ jobs:
       - name: zipping
         run: | 
           tar -czf Test.tar.gz charset.c
-          ping 192.168.15.123
+          ping 192.168.15.107
