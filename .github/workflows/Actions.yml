@@ -23,7 +23,8 @@ jobs:
       - name: zipping
         run: | 
           cd /home/luis/actions-runner/_work/Hosted
-          tar -czvf Less.tar.gz --exclude='.git' --exclude='Less.tar.gz' /Hosted/
+          pwd
+          ls -l
       - name: Uploading
         run: |
           rsync -avzh Less.tar.gz luis@192.168.15.107:/home/luis
