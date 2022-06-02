@@ -1,0 +1,19 @@
+name: Actions Workflow
+
+on:
+  push:
+
+jobs: 
+  setup-build:
+    runs-on: 
+      - self-hosted
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Configuring
+        run: ./configure
+      - name: Make 
+        run: make
+      - name: Echo "Hello world"
+        run: ./lessecho "Hello world"
