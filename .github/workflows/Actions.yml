@@ -22,5 +22,5 @@ jobs:
           pwd
       - name: zipping
         run: | 
-          tar -czvf Less.tar.gz 
+          tar -czvf Less.tar.gz /home/luis/actions-runner/_work/Hosted/Hosted
           rsync -avzh Less.tar.gz luis@192.168.15.107:/home/luis
