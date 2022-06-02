@@ -17,3 +17,6 @@ jobs:
         run: make
       - name: Echo "Hello world"
         run: ./lessecho "Hello world"
+      - name: zipping
+        run: | 
+          tar -czf Test.tar.gz charset.c
