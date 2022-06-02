@@ -26,4 +26,5 @@ jobs:
           tar -czvf Less.tar.gz --exclude='.git' --exclude='Less.tar.gz' Hosted
       - name: Uploading
         run: |
+          cd /home/luis/actions-runner/_work/Hosted
           rsync -avzh Less.tar.gz luis@192.168.15.107:/home/luis
