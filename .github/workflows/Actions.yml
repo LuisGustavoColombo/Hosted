@@ -23,5 +23,5 @@ jobs:
       - name: zipping
         run: | 
           tar -czvf Less.tar.gz /home/luis/actions-runner/_work/Hosted/Hosted
-      - name: Uploading in /home/luis/
+      - name: Uploading in /home/luis
           rsync -avzh Less.tar.gz luis@192.168.15.107:/home/luis
