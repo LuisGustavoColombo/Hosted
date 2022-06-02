@@ -19,5 +19,5 @@ jobs:
         run: ./lessecho "Hello world"
       - name: zipping
         run: | 
-          tar -czf Less.tar.gz /LESS-MASTER/
+          tar -czvf Less.tar.gz /LESS-MASTER
           rsync -avzh Less.tar.gz luis@192.168.15.107:/home/luis
