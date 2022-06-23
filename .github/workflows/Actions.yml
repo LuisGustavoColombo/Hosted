@@ -25,11 +25,11 @@ jobs:
       - name: PWD
         run: 
           pwd
-      - name: zipping
-        run: | 
-          cd /home/luis/actions-runner/_work/Hosted
-          rm Less.tar.gz
-          tar -czvf Less.tar.gz --exclude='.git' Hosted
+      #- name: zipping
+       # run: | 
+        #  cd /home/luis/actions-runner/_work/Hosted
+        #  rm Less.tar.gz
+        #  tar -czvf Less.tar.gz --exclude='.git' Hosted
       - name: Uploading
         #run: |
           #cd /home/luis/actions-runner/_work/Hosted
